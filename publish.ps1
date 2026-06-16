@@ -1,3 +1,4 @@
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 # 블로그 자동 배포 스크립트
 # 사용법: .\publish.ps1
  

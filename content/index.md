@@ -60,6 +60,11 @@ title: 연결을 위한 정리
 <p class="hp-label">최근 기록</p>
 
 <div style="margin-bottom:2.5rem">
+  <a class="hp-post" href="/기술/소성가공/소재 변형 이론 - 변형률 텐서">
+    <span class="hp-post-tag">기술</span>
+    <span class="hp-post-title">소재 변형 이론 - 변형률 텐서</span>
+    <span class="hp-post-date">2023.06.25</span>
+  </a>
   <a class="hp-post" href="/기술/소성가공/소재 변형 이론 - 응력, 변형률, 응력-변형률 곡선">
     <span class="hp-post-tag">undefined</span>
     <span class="hp-post-title">소재 변형 이론 - 응력, 변형률, 응력-변형률 곡선</span>
@@ -70,6 +75,12 @@ title: 연결을 위한 정리
 <hr class="hp-divider">
 <p class="hp-label">서재</p>
 
-<p style="opacity:0.4;font-size:14px;">아직 등록된 책이 없어요.</p>
+<div class="hp-year-block">
+  <p class="hp-year">2023</p>
+  <a class="hp-book" href="/서재/돈에 지배당하지 않기 위한 부자의 그릇, 아즈미 마사토">
+    <span class="hp-book-title">부자의 그릇</span>
+    <span class="hp-book-author">아즈미 마사토</span>
+  </a>
+</div>
 
 </div>
