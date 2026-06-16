@@ -1,6 +1,14 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// 홈페이지 링크 색상 강제 오버라이드
+.hp a { color: inherit !important; }
+.hp a * { color: inherit !important; }
+.hp-title { color: var(--dark); }
+.hp-card-title, .hp-post-title, .hp-book-title { color: var(--darkgray); }
+.hp-sub, .hp-card-desc, .hp-post-tag, .hp-post-date,
+.hp-book-author, .hp-year, .hp-label { color: var(--gray) !important; }
+
+// 이미지 가운데 정렬
 article img {
   display: block;
   margin: 1.5rem auto;

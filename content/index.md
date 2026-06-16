@@ -4,6 +4,8 @@ title: 연결을 위한 정리
 
 <style>
 .hp{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.hp a{color:inherit!important}
+.hp a *{color:inherit!important}
 .hp-hero{text-align:center;padding:3.5rem 1rem 3rem}
 .hp-title{font-size:42px;font-weight:500;letter-spacing:-.03em;line-height:1.1;margin:0 0 1rem}
 .hp-sub{font-size:16px;line-height:1.65;margin:0;opacity:.6}
@@ -47,12 +49,12 @@ title: 연결을 위한 정리
   <a class="hp-card" href="/글쓰기">
     <i class="ti ti-pencil hp-card-icon"></i>
     <p class="hp-card-title">글쓰기</p>
-    <p class="hp-card-desc">생각을 정리하는 법</p>
+    <p class="hp-card-desc">생각 정리</p>
   </a>
   <a class="hp-card" href="/서재">
     <i class="ti ti-books hp-card-icon"></i>
     <p class="hp-card-title">서재</p>
-    <p class="hp-card-desc">읽은 책들의 기록</p>
+    <p class="hp-card-desc">읽은 책 기록</p>
   </a>
 </div>
 
@@ -78,7 +80,7 @@ title: 연결을 위한 정리
 <div class="hp-year-block">
   <p class="hp-year">2023</p>
   <a class="hp-book" href="/서재/돈에 지배당하지 않기 위한 부자의 그릇, 아즈미 마사토">
-    <span class="hp-book-title">부자의 그릇</span>
+    <span class="hp-book-title">부자의 그릇 (돈에 지배당하지 않기 위한 그릇)</span>
     <span class="hp-book-author">아즈미 마사토</span>
   </a>
 </div>

@@ -90,6 +90,8 @@ title: 연결을 위한 정리
 
 <style>
 .hp{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.hp a{color:inherit!important}
+.hp a *{color:inherit!important}
 .hp-hero{text-align:center;padding:3.5rem 1rem 3rem}
 .hp-title{font-size:42px;font-weight:500;letter-spacing:-.03em;line-height:1.1;margin:0 0 1rem}
 .hp-sub{font-size:16px;line-height:1.65;margin:0;opacity:.6}
@@ -133,12 +135,12 @@ title: 연결을 위한 정리
   <a class="hp-card" href="/글쓰기">
     <i class="ti ti-pencil hp-card-icon"></i>
     <p class="hp-card-title">글쓰기</p>
-    <p class="hp-card-desc">생각을 정리하는 법</p>
+    <p class="hp-card-desc">생각 정리</p>
   </a>
   <a class="hp-card" href="/서재">
     <i class="ti ti-books hp-card-icon"></i>
     <p class="hp-card-title">서재</p>
-    <p class="hp-card-desc">읽은 책들의 기록</p>
+    <p class="hp-card-desc">읽은 책 기록</p>
   </a>
 </div>
 
@@ -158,4 +160,4 @@ ${booksHtml}
 `;
 
 fs.writeFileSync(path.join(contentDir, 'index.md'), output, 'utf-8');
-console.log(`✓ index.md 자동 생성 완료 — 최근 글 ${recent.length}개, 책 ${books.length}권`);
+console.log('✓ index.md 자동 생성 완료 — 최근 글 ' + recent.length + '개, 책 ' + books.length + '권');

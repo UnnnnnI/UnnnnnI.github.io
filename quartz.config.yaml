@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: 연결을 위한 정리
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
