@@ -25,6 +25,8 @@ jobs:
           node-version: 24
       - name: Install Dependencies
         run: npm ci
+      - name: Generate index.md
+        run: node scripts/generate-index.mjs
       - name: Build Quartz
         run: npx quartz build
       - uses: actions/upload-pages-artifact@v3
