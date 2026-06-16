@@ -2,7 +2,7 @@
    연결을 위한 정리 - Custom Styles
    ============================================ */
 
-/* 1. 사이드바 타이틀 아래 서브타이틀 추가 */
+/* 1. 사이드바 타이틀 아래 서브타이틀 */
 h1.page-title::after {
   content: "모든 것은 어디에서 연결됩니다.";
   display: block;
@@ -14,52 +14,69 @@ h1.page-title::after {
   opacity: 0.8;
 }
 
-/* 2. 홈페이지에서 자동 생성되는 제목·날짜 숨기기 */
+/* 2. 홈페이지 자동 제목·날짜 숨기기 */
 article.homepage h1.article-title,
 article.homepage .content-meta {
   display: none !important;
 }
 
-/* 3. 홈페이지 링크 색상 강제 오버라이드 */
-.hp a {
-  color: inherit !important;
-  background: transparent !important;
+/* 3. 브레드크럼 - 마지막 항목(글 제목) 제거 */
+.breadcrumb-element:last-child {
+  display: none !important;
 }
-.hp a * {
-  color: inherit !important;
-}
-
-/* 4. 카드 배경 및 색상 명시 */
-a.hp-card {
-  background: rgba(0, 0, 0, 0.04) !important;
-  border: 1px solid rgba(0, 0, 0, 0.07) !important;
-  color: var(--dark) !important;
-}
-a.hp-card:hover {
-  background: rgba(0, 0, 0, 0.08) !important;
-}
-[saved-theme="dark"] a.hp-card {
-  background: rgba(255, 255, 255, 0.06) !important;
-  border: 1px solid rgba(255, 255, 255, 0.09) !important;
-  color: var(--dark) !important;
+.breadcrumb-element:nth-last-child(2) .breadcrumb-separator {
+  display: none !important;
 }
 
-/* 5. 최근 기록 · 서재 행 색상 */
-a.hp-post,
-a.hp-book {
-  background: transparent !important;
-  color: var(--dark) !important;
+/* 4. 브레드크럼 색상 (보라 → 회색) + 간격 */
+.breadcrumb-container {
+  margin-bottom: 0.2rem;
+}
+.breadcrumb-element a {
+  color: var(--gray) !important;
+  text-decoration: none !important;
+}
+.breadcrumb-element a:hover {
+  color: var(--darkgray) !important;
+}
+.breadcrumb-separator {
+  color: var(--lightgray) !important;
 }
 
-/* 6. 구분선 색상 */
-.hp-divider {
-  border-top-color: rgba(128, 128, 128, 0.15) !important;
+/* 5. Table of Contents 숨기기 */
+.toc,
+#toc,
+.right .toc {
+  display: none !important;
 }
 
-/* 7. 태그 스타일 (글 페이지) - 넓이 자동, 노란색 제거 */
+/* 6. Properties 패널 숨기기 */
+.properties,
+.note-properties,
+details.properties,
+.frontmatter-properties {
+  display: none !important;
+}
+
+/* 7. 그래프 뷰 아래 캡션 */
+.right .graph > div::after,
+.graph-outer::after {
+  content: "모든 것은 어디에서 연결된다";
+  display: block;
+  text-align: center;
+  font-size: 11px;
+  color: var(--gray);
+  opacity: 0.55;
+  padding-top: 10px;
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
+/* 8. 태그 스타일 (글 페이지) - 크기 맞춤, 노란색 제거 */
 .tag-link,
 ul.tags li a,
-a.tag {
+a.tag,
+.tag {
   display: inline-block !important;
   width: auto !important;
   white-space: nowrap !important;
@@ -71,19 +88,44 @@ a.tag {
   text-decoration: none !important;
 }
 
-/* 8. 그래프 뷰 아래 캡션 */
-.graph-outer::after {
-  content: "모든 것은 어디에서 연결된다";
-  display: block;
-  text-align: center;
-  font-size: 11px;
-  color: var(--gray);
-  opacity: 0.6;
-  padding-top: 8px;
+/* 9. 홈페이지 링크 색상 오버라이드 */
+.hp a {
+  color: inherit !important;
+  background: transparent !important;
+}
+.hp a * {
+  color: inherit !important;
 }
 
-/* 9. 이미지 가운데 정렬 */
+/* 10. 카드 배경 */
+a.hp-card {
+  background: rgba(0, 0, 0, 0.04) !important;
+  border: 1px solid rgba(0, 0, 0, 0.07) !important;
+  color: var(--dark) !important;
+}
+a.hp-card:hover {
+  background: rgba(0, 0, 0, 0.08) !important;
+}
+[saved-theme="dark"] a.hp-card {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+}
+
+/* 11. 최근 기록·서재 행 배경 투명 */
+a.hp-post,
+a.hp-book {
+  background: transparent !important;
+  color: var(--dark) !important;
+}
+
+/* 12. 이미지 가운데 정렬 */
 article img {
   display: block;
   margin: 1.5rem auto;
+}
+
+/* 13. 하이라이트 안 굵은글씨 (==**text**== 대신 **==text==** 사용 권장) */
+mark strong,
+mark b {
+  font-weight: 700;
 }

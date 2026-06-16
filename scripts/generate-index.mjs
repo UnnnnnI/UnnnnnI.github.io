@@ -27,6 +27,14 @@ function parseFrontmatter(raw) {
   return { data };
 }
 
+// tags 파싱 - undefined 방지
+function getFirstTag(tags) {
+  if (!tags) return '';
+  if (Array.isArray(tags)) return tags[0] || '';
+  if (typeof tags === 'string') return tags.trim();
+  return '';
+}
+
 const SKIP_DIRS = new Set(['private', 'templates', '.obsidian', '.trash', 'node_modules']);
 
 function getMdFiles(dir, files = []) {
@@ -52,7 +60,7 @@ for (const filePath of getMdFiles(contentDir)) {
   if (data.book === 'true' || data.book === true) {
     books.push({ title: data.title, author: data.author || '', year: String(data.year || '2025'), href });
   } else if (data.date) {
-    const tag = Array.isArray(data.tags) ? data.tags[0] : (data.tags || '');
+    const tag = getFirstTag(data.tags);
     const dateStr = String(data.date).slice(0, 10).replace(/-/g, '.');
     posts.push({ title: data.title, date: String(data.date).slice(0, 10), dateStr, tag, href });
   }

@@ -62,7 +62,7 @@ a.hp-book:last-child{border-bottom:none}
     <span class="hp-post-date">2023.06.25</span>
   </a>
   <a class="hp-post" href="/기술/소성가공/소재 변형 이론 - 응력, 변형률, 응력-변형률 곡선">
-    <span class="hp-post-tag">undefined</span>
+    <span class="hp-post-tag"></span>
     <span class="hp-post-title">소재 변형 이론 - 응력, 변형률, 응력-변형률 곡선</span>
     <span class="hp-post-date">2023.06.24</span>
   </a>
