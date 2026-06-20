@@ -27,7 +27,6 @@ function parseFrontmatter(raw) {
   return { data };
 }
 
-// tags 파싱 - undefined 방지
 function getFirstTag(tags) {
   if (!tags) return '';
   if (Array.isArray(tags)) return tags[0] || '';
@@ -92,6 +91,7 @@ const booksHtml = sortedYears.map(year => {
 
 const output = `---
 title: 연결을 위한 정리
+cssclass: homepage
 cssclasses:
   - homepage
 ---
@@ -102,8 +102,8 @@ cssclasses:
 .hp a *{color:inherit!important}
 .hp-divider{border:none;border-top:1px solid rgba(128,128,128,.15);margin:0}
 .hp-label{font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;opacity:.45;padding:2rem 0 1rem;margin:0;display:block}
-.hp-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:2.5rem}
-a.hp-card{background:rgba(0,0,0,.04)!important;border:1px solid rgba(0,0,0,.07)!important;border-radius:12px;padding:1.4rem 1.2rem;text-decoration:none!important;display:block;color:inherit!important}
+.hp-cards{display:flex;gap:10px;margin-bottom:2.5rem}
+a.hp-card{background:rgba(0,0,0,.04)!important;border:1px solid rgba(0,0,0,.07)!important;border-radius:12px;padding:1.4rem 1.2rem;text-decoration:none!important;display:block;color:inherit!important;width:200px}
 a.hp-card:hover{background:rgba(0,0,0,.08)!important}
 .hp-card-icon{font-size:20px;margin-bottom:.9rem;display:block}
 .hp-card-title{font-size:14px;font-weight:500;margin:0 0 4px}
@@ -127,20 +127,10 @@ a.hp-book:last-child{border-bottom:none}
 <span class="hp-label">탐색</span>
 
 <div class="hp-cards">
-  <a class="hp-card" href="/기술">
+  <a class="hp-card" href="/tags/기술">
     <i class="ti ti-cpu hp-card-icon"></i>
     <p class="hp-card-title">기술</p>
     <p class="hp-card-desc">공학 문제를 푸는 방법들</p>
-  </a>
-  <a class="hp-card" href="/글쓰기">
-    <i class="ti ti-pencil hp-card-icon"></i>
-    <p class="hp-card-title">글쓰기</p>
-    <p class="hp-card-desc">생각 정리</p>
-  </a>
-  <a class="hp-card" href="/서재">
-    <i class="ti ti-books hp-card-icon"></i>
-    <p class="hp-card-title">서재</p>
-    <p class="hp-card-desc">읽은 책 기록</p>
   </a>
 </div>
 

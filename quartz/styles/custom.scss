@@ -14,7 +14,12 @@ h1.page-title::after {
   opacity: 0.8;
 }
 
-/* 2. 홈페이지 자동 제목·날짜 숨기기 */
+/* 2. 홈페이지 자동 제목·날짜 숨기기 (다중 방어선) */
+body[data-slug="index"] h1.article-title,
+body[data-slug="index"] p.content-meta,
+body[data-slug="index"] .content-meta,
+.homepage h1.article-title,
+.homepage .content-meta,
 article.homepage h1.article-title,
 article.homepage .content-meta {
   display: none !important;
@@ -28,7 +33,7 @@ article.homepage .content-meta {
   display: none !important;
 }
 
-/* 4. 브레드크럼 색상 (보라 → 회색) + 간격 */
+/* 4. 브레드크럼 색상 + 간격 */
 .breadcrumb-container {
   margin-bottom: 0.2rem;
 }
@@ -72,7 +77,7 @@ details.properties,
   letter-spacing: 0.02em;
 }
 
-/* 8. 태그 스타일 (글 페이지) - 크기 맞춤, 노란색 제거 */
+/* 8. 태그 스타일 */
 .tag-link,
 ul.tags li a,
 a.tag,
@@ -88,7 +93,7 @@ a.tag,
   text-decoration: none !important;
 }
 
-/* 9. 홈페이지 링크 색상 오버라이드 */
+/* 9. 홈페이지 링크 색상 */
 .hp a {
   color: inherit !important;
   background: transparent !important;
@@ -111,7 +116,7 @@ a.hp-card:hover {
   border: 1px solid rgba(255, 255, 255, 0.09) !important;
 }
 
-/* 11. 최근 기록·서재 행 배경 투명 */
+/* 11. 최근 기록·서재 행 */
 a.hp-post,
 a.hp-book {
   background: transparent !important;
@@ -124,8 +129,13 @@ article img {
   margin: 1.5rem auto;
 }
 
-/* 13. 하이라이트 안 굵은글씨 (==**text**== 대신 **==text==** 사용 권장) */
+/* 13. 하이라이트+굵은글씨 */
 mark strong,
 mark b {
   font-weight: 700;
+}
+
+/* 14. Explorer 폴더 항목 살짝 더 깔끔하게 */
+.explorer-content .folder-icon {
+  opacity: 0.5;
 }

@@ -1,5 +1,6 @@
 ---
 title: 연결을 위한 정리
+cssclass: homepage
 cssclasses:
   - homepage
 ---
@@ -10,8 +11,8 @@ cssclasses:
 .hp a *{color:inherit!important}
 .hp-divider{border:none;border-top:1px solid rgba(128,128,128,.15);margin:0}
 .hp-label{font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;opacity:.45;padding:2rem 0 1rem;margin:0;display:block}
-.hp-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:2.5rem}
-a.hp-card{background:rgba(0,0,0,.04)!important;border:1px solid rgba(0,0,0,.07)!important;border-radius:12px;padding:1.4rem 1.2rem;text-decoration:none!important;display:block;color:inherit!important}
+.hp-cards{display:flex;gap:10px;margin-bottom:2.5rem}
+a.hp-card{background:rgba(0,0,0,.04)!important;border:1px solid rgba(0,0,0,.07)!important;border-radius:12px;padding:1.4rem 1.2rem;text-decoration:none!important;display:block;color:inherit!important;width:200px}
 a.hp-card:hover{background:rgba(0,0,0,.08)!important}
 .hp-card-icon{font-size:20px;margin-bottom:.9rem;display:block}
 .hp-card-title{font-size:14px;font-weight:500;margin:0 0 4px}
@@ -35,20 +36,10 @@ a.hp-book:last-child{border-bottom:none}
 <span class="hp-label">탐색</span>
 
 <div class="hp-cards">
-  <a class="hp-card" href="/기술">
+  <a class="hp-card" href="/tags/기술">
     <i class="ti ti-cpu hp-card-icon"></i>
     <p class="hp-card-title">기술</p>
     <p class="hp-card-desc">공학 문제를 푸는 방법들</p>
-  </a>
-  <a class="hp-card" href="/글쓰기">
-    <i class="ti ti-pencil hp-card-icon"></i>
-    <p class="hp-card-title">글쓰기</p>
-    <p class="hp-card-desc">생각 정리</p>
-  </a>
-  <a class="hp-card" href="/서재">
-    <i class="ti ti-books hp-card-icon"></i>
-    <p class="hp-card-title">서재</p>
-    <p class="hp-card-desc">읽은 책 기록</p>
   </a>
 </div>
 
@@ -56,12 +47,12 @@ a.hp-book:last-child{border-bottom:none}
 <span class="hp-label">최근 기록</span>
 
 <div style="margin-bottom:2.5rem">
-  <a class="hp-post" href="/기술/소성가공/소재 변형 이론 - 변형률 텐서">
+  <a class="hp-post" href="/소성가공/소재 변형 이론 - 변형률 텐서">
     <span class="hp-post-tag">기술</span>
     <span class="hp-post-title">소재 변형 이론 - 변형률 텐서</span>
     <span class="hp-post-date">2023.06.25</span>
   </a>
-  <a class="hp-post" href="/기술/소성가공/소재 변형 이론 - 응력, 변형률, 응력-변형률 곡선">
+  <a class="hp-post" href="/소성가공/소재 변형 이론 - 응력, 변형률, 응력-변형률 곡선">
     <span class="hp-post-tag"></span>
     <span class="hp-post-title">소재 변형 이론 - 응력, 변형률, 응력-변형률 곡선</span>
     <span class="hp-post-date">2023.06.24</span>
