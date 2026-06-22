@@ -62,12 +62,6 @@ a.hp-book:last-child{border-bottom:none}
 <hr class="hp-divider">
 <span class="hp-label">서재</span>
 
-<div class="hp-year-block">
-  <p class="hp-year">2023</p>
-  <a class="hp-book" href="/서재/돈에 지배당하지 않기 위한 부자의 그릇, 아즈미 마사토">
-    <span class="hp-book-title">부자의 그릇 (돈에 지배당하지 않기 위한 그릇)</span>
-    <span class="hp-book-author">아즈미 마사토</span>
-  </a>
-</div>
+<p style="opacity:0.4;font-size:14px;">아직 등록된 책이 없어요.</p>
 
 </div>
