@@ -36,6 +36,11 @@ a.hp-post:last-child{border-bottom:none}
     <span class="hp-post-title">소재 변형 이론 - 응력, 변형률, 응력-변형률 곡선</span>
     <span class="hp-post-date">2023.06.24</span>
   </a>
+  <a class="hp-post" href="/AI적용/CAD 데이터의 인공지능 학습을 위한 전처리 방법 소개, Voxelization (복셀화)">
+    <span class="hp-post-tag">AI적용</span>
+    <span class="hp-post-title">CAD 데이터의 인공지능 학습을 위한 전처리 방법 소개, Voxelization (복셀화)</span>
+    <span class="hp-post-date">2023.05.17</span>
+  </a>
   <a class="hp-post" href="/최적설계/최적 설계 개요">
     <span class="hp-post-tag">최적설계</span>
     <span class="hp-post-title">최적 설계 개요</span>
